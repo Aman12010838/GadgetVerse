@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #img1 {
+        height: 100%;
+        width: 100%;
+        margin-top: -5px;
+        /* padding-bottom: 0px; */
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    /* .categories h5,h6,button {
+        margin-left: 70px;
+        text-align: left;
+    }
+    .categories button
+    {
+        color: white;
+        background: black;
+        border-radius: 2px;
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        font-size: medium;
+        margin-right: -70px;
+    } */
+    .categories h5 {
+        font-size: 18px;
+        margin-left: 50px;
+        text-align: left;
+        margin-bottom: 6px;
+    }
+
+    .categories h6 {
+        font-size: 16px;
+        margin-left: 50px;
+        text-align: left;
+        /* margin-bottom: 20px; */
+    }
+
+    .img01:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .button1 {
+        color: white;
+        background: black;
+        border-radius: 2px;
+        padding: 10px;
+        border: none;
+        font-size: medium;
+        margin-top: 50px;
+        margin-right: 20px;
+        margin-left: 50px;
+        justify-content: center;
+    }
+
+    .button2 {
+        color: white;
+        background: black;
+        border-radius: 2px;
+        padding: 10px;
+        border: none;
+        font-size: medium;
+        /* margin-right: -70px; */
+        justify-content: center;
+    }
+
+    .button3 {
+        color: white;
+        background-color: black;
+        border-radius: 2px;
+        padding: 5px;
+        border: none;
+        font-size: medium;
+        margin-left: 20px;
+        justify-content: center;
+    }
+
+    .img01 {
+        background-color: whitesmoke;
+        border-radius: 5px;
+        margin: 10px;
+        padding-bottom: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        /* margin-left: -5px; */
+    }
+
+    #heading {
+        text-align: center;
+        /* margin: 30px; */
+    }
+
+    #h6 {
+        margin-bottom: 20px;
+    }
+
+    #red {
+        color: orangered;
+    }
+
+    .head1 {
+        margin-left: 115px;
+        font-size: 20px;
+    }
+
+    .head2 {
+        margin-left: 180px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .head3 {
+        margin-left: 105px;
+        font-size: 20px;
+    }
+
+    .deals {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: whitesmoke;
+        margin-bottom: 23px;
+    }
+
+    .img001 {
+        /* background-color: whitesmoke; */
+        border-radius: 5px;
+        margin: 10px;
+        padding-bottom: 30px;
+
+    }
+
+    h3 {
+        font-size: 25px;
+        /* margin-left: 20px; */
+        text-align: center;
+    }
+
+    .dropbtn {
+        background-color: whitesmoke;
+        color: black;
+        padding: 6px;
+        font-size: 15px;
+        border: 1px solid;
+        cursor: pointer;
+        border-radius: 2px;
+        width: 230px;
+        text-align: left;
+        /* margin-left: 70em; */
+        float: right;
+        margin-top: 5px;
+        font-weight: bold;
+    }
+
+    .dropbtn:hover,
+    .dropbtn:focus {
+        background-color: white;
+        color: black;
+    }
+
+    .dropdown {
+        /* position: relative; */
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        margin-top: 38px;
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 230px;
+        overflow: auto;
+        /* box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2); */
+    }
+
+    .dropdown-content a {
+
+        color: black;
+        padding: 6px 8px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown a:hover {
+        background-color: white;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .arrow {
+        display: inline-flex;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <header class="navbar">
+        <!-- <img id="nav-left" src="" alt="logo"> -->
+        <h1 id="logo">GadgetVerse</h1>
+        <ul class="nav-centre">
+            <!-- <li><a href="fashion.html">Fashion</li> -->
+            <li><a href="gadgets.html"></li>
+            <!-- <li><a href="homekitchen.html">Home Designing</li> -->
+        </ul>
+        <div class="nav-right">
+            <img class="icon" title="Wishlist" src="iconfinder_211755_heart_icon.svg" alt="">
+            <img class="icon" title="Cart" src="iconfinder_353403_cart_icon.svg" alt="">
+            <img class="icon" title="My Account" src="iconfinder_3289576_user_icon.svg" alt="">
+        </div>
+    </header>
+    <div class="main">
+        <!-- <marquee style="background-color:crimson;color: white; padding: 10px;font-size:17px;" behavior="scroll" direction="left" scrollamount="12">
+            <pre>Great Offers To Upgrade To Latest Tech   |   No Cost EMI   |   Exchange Offers   |   SBI Card 10% Instant Discount</pre></marquee> -->
+        <div class="arrow">
+            <!-- <p style="font-size: 16px;margin-right: 60.790em;margin-top: 10px;">Home / Gadgets / <b>SmartWatches</b></p> -->
+            <p style="font-size: 16px;margin-right: 62.65em;margin-top: 10px;">
+                <a style="font-size: 16px;" href="Home.html">Home / </a><a style="font-size: 16px;"
+                    href="gadgets.html">Gadgets / </a><b>SmartWatch</b>
+            </p>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Sort By : Recommended <img
+                        style="margin-left:5px; height: 15px;width: 20px;"
+                        src="iconfinder_172458_down_arrow_icon_512px.png" alt=""></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a style="font-size: 15px;" href="#">Whats's New</a>
+                    <a style="font-size: 15px;" href="#">Popularity</a>
+                    <a style="font-size: 15px;" href="#">Better Discount</a>
+                    <a style="font-size: 15px;" href="#">Price:Low to High</a>
+                    <a style="font-size: 15px;" href="#">Price:High to Low</a>
+                </div>
+            </div>
+        </div>
+        <div class="categories" style="justify-content: space-evenly;margin-top:0px;">
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height:250px; width: 250px;padding-top: 25px;padding-bottom: 25px;padding-left: 50px;"
+                        src="blk-44mm-6-600x600-removebg-preview (1).png" alt="">
+                    <h5>Apple Watch Series 6</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-bottom: 0px;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 230px; width: 250px;margin-bottom: 30px;padding-top: 40px;padding-left: 50px;"
+                        src="samsung-galaxy-gear-sport-smartwatch-black-sku-header.png" alt="">
+                    <h5> Samsung Gear S3 Frontier</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 25px;" src="_-black-45_.png" alt="">
+                    <h5>Oppo Watch 41mm</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 15px;"
+                        src="OnePlus-Watch-Midnight-Black-2.png" alt="">
+                    <h5>One Plus Watch </h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+        </div>
+        <div class="categories" style="justify-content: space-evenly;margin-top:0px;">
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height:250px; width: 250px;padding-top: 25px;padding-bottom: 25px;padding-left: 50px;"
+                        src="blk-44mm-6-600x600-removebg-preview (1).png" alt="">
+                    <h5>Apple Watch Series 6</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-bottom: 0px;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 230px; width: 250px;margin-bottom: 30px;padding-top: 40px;padding-left: 50px;"
+                        src="samsung-galaxy-gear-sport-smartwatch-black-sku-header.png" alt="">
+                    <h5> Samsung Gear S3 Frontier</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 25px;" src="_-black-45_.png" alt="">
+                    <h5>Oppo Watch 41mm</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 15px;"
+                        src="OnePlus-Watch-Midnight-Black-2.png" alt="">
+                    <h5>One Plus Watch </h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+        </div>
+        <div class="categories" style="justify-content: space-evenly;margin-top:0px;">
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height:250px; width: 250px;padding-top: 25px;padding-bottom: 25px;padding-left: 50px;"
+                        src="blk-44mm-6-600x600-removebg-preview (1).png" alt="">
+                    <h5>Apple Watch Series 6</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-bottom: 0px;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 230px; width: 250px;margin-bottom: 30px;padding-top: 40px;padding-left: 50px;"
+                        src="samsung-galaxy-gear-sport-smartwatch-black-sku-header.png" alt="">
+                    <h5> Samsung Gear S3 Frontier</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 25px;" src="_-black-45_.png" alt="">
+                    <h5>Oppo Watch 41mm</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 15px;"
+                        src="OnePlus-Watch-Midnight-Black-2.png" alt="">
+                    <h5>One Plus Watch </h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+        </div>
+        <div class="categories" style="justify-content: space-evenly;margin-top:0px;">
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height:250px; width: 250px;padding-top: 25px;padding-bottom: 25px;padding-left: 50px;"
+                        src="blk-44mm-6-600x600-removebg-preview (1).png" alt="">
+                    <h5>Apple Watch Series 6</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-bottom: 0px;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 230px; width: 250px;margin-bottom: 30px;padding-top: 40px;padding-left: 50px;"
+                        src="samsung-galaxy-gear-sport-smartwatch-black-sku-header.png" alt="">
+                    <h5> Samsung Gear S3 Frontier</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 25px;" src="_-black-45_.png" alt="">
+                    <h5>Oppo Watch 41mm</h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+            <a href="Product_details.html">
+                <div class="img01" style="width: 350px;padding-left: 5px;padding-right: 10px;">
+                    <img style="height: 300px; width: 300px;padding-left: 15px;"
+                        src="OnePlus-Watch-Midnight-Black-2.png" alt="">
+                    <h5>One Plus Watch </h5>
+                    <h
+                        style=" background-color: green; color:white; padding: 3px; border-radius: 5px;font-size: 15px;margin-left: 50px;">
+                        4.2★</h>
+                    <h6 style="font-weight: normal;margin-top: 10px;">Rs.71,900</h6>
+                    <h6 id="h6"><s style="font-size: 13px;font-weight: normal;">Rs.75,999</s>&nbsp;&nbsp;&nbsp;<a
+                            style="font-size: 16px;color: orangered;font-weight: bold;">5% off</a></h6>
+                    <a class="button1" href="">Add to Cart</a>
+                    <a class="button2" href="">Buy Now</a>
+                </div>
+            </a>
+        </div>
+        <div style="display: inline-flex;margin-left: 30%;margin-bottom: 10px;">
+            <h3>
+                <pre>1   2   3   4   5   6   7   8   9   10  . . . . .</pre>
+            </h3>
+            <a class="button3" href="">Next</a>
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <ul>
+                <li style="font-size: 18px;line-height: 2.5;"><b>INFORMATION</b></li>
+                <li>About Us</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Contact Us</li>
+                <li>Site Map</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li style="font-size: 18px;line-height: 2.5;"><b>EXTRA</b></li>
+                <li>My Account</li>
+                <li>Order History</li>
+                <li>Wishlist</li>
+                <li>Newsletter</li>
+                <li>Returns</li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li style="font-size: 18px;line-height: 2.5;"><b>CONTACT US</b></li>
+                <li style="display:inline-flex"><i class="material-icons">&#xe55f;</i>&nbsp;Address</li>
+                <br>
+                <li style="display: inline-flex;"><i class="material-icons">&#xe0e1;</i>&nbsp;Email</li>
+                <br>
+                <li style="display: inline-flex;"><i class="material-icons">&#xe0cd;</i>&nbsp;Call Us</li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
